@@ -12,8 +12,9 @@ class SecondActivity : AppCompatActivity() {
         val transmittedInt: Int = intent.getIntExtra(TRANSMITTED_INT, -1)
         val transmittedBoolean: Boolean = intent.getBooleanExtra(TRANSMITTED_BOOLEAN, false)
 
-        val textView: TextView = findViewById(R.id.first_activity_text_view)
+        val textView: TextView = findViewById(R.id.second_activity_text_view)
         textView.text = "These values were from previous screen: transmittedString: $transmittedString, transmittedInt: $transmittedInt, transmittedBoolean: $transmittedBoolean"
+
     }
 
     companion object {
